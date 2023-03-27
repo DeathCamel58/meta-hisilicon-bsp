@@ -1,19 +1,20 @@
 require conf/machine/include/hisilicon-soc.inc
 SOC_FAMILY:append = ":hi3520dv200"
 
-# TODO: Not sure what to set `DEFAULTTUNE` as. Double check this.
-DEFAULTTUNE ?= "armv7athf-neon"
-require conf/machine/include/arm/armv7a/tune-cortexa7.inc
+# NOTE: `neon` is not supported by this CPU
+DEFAULTTUNE ?= "armv7a"
+require conf/machine/include/arm/armv7a/tune-cortexa9.inc
 
 # Increase this everytime you change something in the kernel
 MACHINE_KERNEL_PR = "r1"
 
-# Default providers, may need to override for specific machines
+# Set the default Linux version
 PREFERRED_PROVIDER_virtual/kernel ?= "linux-yocto"
 PREFERRED_VERSION_linux-yocto ?= "3.0"
-#PREFERRED_PROVIDER_virtual/kernel ?= "linux-hisilicon-staging"
-#PREFERRED_PROVIDER_virtual/bootloader ?= "u-boot-hisilicon-staging"
-#PREFERRED_PROVIDER_u-boot ?= "u-boot-hisilicon-staging"
+
+# Set the default U-Boot version
+PREFERRED_PROVIDER_virtual/bootloader ?= "u-boot"
+PREFERRED_VERSION_u-boot ?= "2010.06"
 
 # Graphics providers and variables
 # TODO: Double check these
