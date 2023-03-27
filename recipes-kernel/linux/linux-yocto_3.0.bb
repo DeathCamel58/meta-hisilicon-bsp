@@ -29,5 +29,6 @@ SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git;prot
 # Custom Patches
 SRC_URI += " \
     file://0001-Add-Linux-files-from-Hi3520D_SDK_V1.0.3.0.patch \
+    file://defconfig \
 "
 
