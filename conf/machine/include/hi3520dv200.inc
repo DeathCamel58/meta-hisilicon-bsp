@@ -10,7 +10,7 @@ MACHINE_KERNEL_PR = "r1"
 
 # Default providers, may need to override for specific machines
 PREFERRED_PROVIDER_virtual/kernel ?= "linux-yocto"
-PREFERRED_VERSION_linux-yocto ?= "3.0%"
+PREFERRED_VERSION_linux-yocto ?= "3.0"
 #PREFERRED_PROVIDER_virtual/kernel ?= "linux-hisilicon-staging"
 #PREFERRED_PROVIDER_virtual/bootloader ?= "u-boot-hisilicon-staging"
 #PREFERRED_PROVIDER_u-boot ?= "u-boot-hisilicon-staging"
