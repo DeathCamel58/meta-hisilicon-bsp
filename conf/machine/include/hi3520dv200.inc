@@ -10,7 +10,7 @@ MACHINE_KERNEL_PR = "r1"
 
 # Set the default Linux version
 PREFERRED_PROVIDER_virtual/kernel ?= "linux-yocto"
-PREFERRED_VERSION_linux-yocto ?= "3.0"
+PREFERRED_VERSION_linux-yocto ?= "3.0.8"
 
 # Set the default U-Boot version
 PREFERRED_PROVIDER_virtual/bootloader ?= "u-boot"
