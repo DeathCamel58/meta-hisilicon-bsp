@@ -21,6 +21,10 @@ PREFERRED_VERSION_u-boot ?= "2010.06"
 PREFERRED_PROVIDER_virtual/gpudriver ?= ""
 PVR_DISPLAY_CONTROLLER_ALIAS ?= "omapdrm"
 
+# Remove vfat from kernel due to failing kernel build
+# Ref: https://github.com/YoeDistro/yoe-distro/issues/572#issuecomment-912097593
+KERNEL_FEATURES:remove = "cfg/fs/vfat.scc"
+
 KERNEL_IMAGETYPE = "uImage"
 
 # TODO: Double check these

@@ -21,7 +21,7 @@ COMPATIBLE_MACHINE = "k9604-w"
 KBRANCH ?= "master"
 
 # Commit SHA hash for v3.0
-SRCREV:k9604-w = "c9c3395d5e3dcc6daee66c6908354d47bf98cb0c"
+SRCREV:k9604-w = "02f8c6aee8df3cdc935e9bdd4f2d020306035dbe"
 
 # Kernel repository
 SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git;protocol=git;branch=${KBRANCH}"
